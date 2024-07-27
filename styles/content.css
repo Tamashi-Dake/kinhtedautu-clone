@@ -1,0 +1,114 @@
+#top-post img {
+  width: 100%;
+}
+
+#sub-post {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 0 20px;
+}
+#sub-post img {
+  min-width: 100px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.side-new {
+  width: 50%;
+  overflow: hidden;
+}
+.side-new .topic {
+  background-color: aquamarine;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  padding: 10px;
+  font-weight: bold;
+}
+.side-new .first-in-topic {
+  font-weight: bold;
+}
+.side-new img {
+  width: 100%;
+}
+.side-new hr {
+  margin: 5px 0;
+}
+.side-new p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.side-new p:hover {
+  text-decoration: underline;
+  color: burlywood;
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+}
+section .ads-wrapper {
+  position: sticky;
+  top: 60px;
+}
+section .topic-main .summary {
+  font-size: small;
+  color: gray;
+}
+section .topic-main .other-links {
+  display: flex;
+  background: rgb(235, 234, 234);
+  flex-flow: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+section .topic-main .other-links ul {
+  padding: 0 30px;
+}
+section .topic-main .other-links .devider {
+  border-top: 1px solid gray;
+  margin: 5px 10px;
+  transform: translate(-5%);
+}
+section .topic-main .other-links a {
+  color: black;
+  text-decoration: none;
+}
+section .topic-main .other-links a:hover {
+  text-decoration: underline;
+}
+section .topic-main .other-links li::marker {
+  color: gray;
+}
+section .topic-subs {
+  display: flex;
+  flex-direction: column;
+}
+section .topic-subs .topic-sub {
+  display: flex;
+  width: 100%;
+}
+section .topic-subs .topic-sub img {
+  width: 100px;
+}
+section .topic-subs .topic-sub p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .topic-subs .topic-sub p:hover {
+  text-decoration: underline;
+  color: burlywood;
+  cursor: pointer;
+}
+section .placeholder {
+  height: 150px;
+  width: 100%;
+  background-color: aquamarine;
+  margin: 1px;
+}/*# sourceMappingURL=content.css.map */

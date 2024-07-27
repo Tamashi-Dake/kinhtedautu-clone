@@ -1,0 +1,103 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+}
+header .wraper {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 50px;
+}
+header .navbar-wraper {
+  display: flex;
+  background-color: #231f20;
+  width: 100%;
+  border-top: 4px solid #b1141b;
+}
+header .navbar {
+  font-weight: bold;
+  font-size: 12px;
+}
+header .navbar .navbar-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .navbar .nav-item {
+  text-decoration: none;
+  padding: 10px;
+  height: 100%;
+}
+header .navbar .nav-item:hover {
+  background-color: #b1141b;
+}
+header .navbar .nav-link .icon {
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+}
+header .navbar .nav-title {
+  color: white;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng cho navbar khi dính ở đầu trang */
+  z-index: 1000; /* Đảm bảo navbar hiển thị trên các phần tử khác */
+}
+
+.dropdown-item {
+  color: black !important;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.marquee {
+  max-width: 1300px;
+  margin: 10px auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+.marquee .cta {
+  font-weight: 600;
+  color: #bd2024;
+  font-size: 18px;
+  position: absolute;
+  z-index: 1;
+  padding: 0 10px;
+  background: white;
+  text-decoration: underline;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 40s linear infinite;
+}
+.marquee-content:hover {
+  animation-play-state: paused; /* Tạm dừng animation khi hover */
+}
+
+.marquee a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 18px; /* Điều chỉnh kích thước chữ */
+  padding: 0 25px;
+  position: relative;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=header.css.map */

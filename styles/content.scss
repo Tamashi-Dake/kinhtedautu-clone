@@ -1,0 +1,120 @@
+#top-post {
+  img {
+    width: 100%;
+  }
+}
+#sub-post {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min(100px, 200px), 1fr));
+  gap: 0 20px;
+  img {
+    min-width: 100px;
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+.side-new {
+  width: 50%;
+  overflow: hidden;
+  .topic {
+    background-color: aquamarine;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .first-in-topic {
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+  }
+  hr {
+    margin: 5px 0;
+  }
+  p {
+    // margin-bottom: 5px;
+    overflow: hidden;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+    &:hover {
+      text-decoration: underline;
+      color: burlywood;
+      cursor: pointer;
+    }
+  }
+}
+
+section {
+  .ads-wrapper {
+    position: sticky;
+    top: 60px;
+  }
+  position: relative;
+
+  .topic-main {
+    .summary {
+      font-size: small;
+      color: gray;
+    }
+    .other-links {
+      display: flex;
+      background: rgb(235, 234, 234);
+      flex-flow: column;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid gray;
+      ul {
+        padding: 0 30px;
+      }
+      .devider {
+        border-top: 1px solid gray;
+        margin: 5px 10px;
+        transform: translate(-5%);
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      li::marker {
+        color: gray;
+      }
+    }
+  }
+  .topic-subs {
+    display: flex;
+    flex-direction: column;
+    .topic-sub {
+      display: flex;
+      width: 100%;
+      img {
+        width: 100px;
+      }
+      p {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          text-decoration: underline;
+          color: burlywood;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .placeholder {
+    height: 150px;
+    width: 100%;
+    background-color: aquamarine;
+    margin: 1px;
+  }
+}
