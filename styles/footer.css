@@ -21,4 +21,22 @@ footer .copyright {
   margin: 20px 150px;
   font-size: 0.8rem;
   color: #666;
+}
+
+@media (max-width: 900px) {
+  footer .company {
+    flex-direction: column;
+    padding: 30px 50px;
+  }
+  footer .company img {
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.181);
+  }
+  footer .company p {
+    padding: 20px 0;
+  }
+  footer .copyright {
+    margin: 20px 50px;
+  }
 }/*# sourceMappingURL=footer.css.map */

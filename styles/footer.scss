@@ -24,3 +24,23 @@ footer {
     color: #666;
   }
 }
+
+@media (max-width: 900px) {
+  footer {
+    .company {
+      flex-direction: column;
+      padding: 30px 50px;
+      img {
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.181);
+      }
+      p {
+        padding: 20px 0;
+      }
+    }
+    .copyright {
+      margin: 20px 50px;
+    }
+  }
+}

@@ -30,36 +30,39 @@
         />
       </div>
       <!-- Nav tabs -->
-      <div class="navbar-wraper" id="navbar">
+      <div class="navbar-wraper p-1" id="navbar">
         <div class="container p-0">
           <nav class="navbar p-0 navbar-expand-lg">
             <div class="container-fluid">
-              <div class="nav-item">
+              <div class="nav-item lg">
                 <a class="nav-link" href="/"
                   ><i na class="fa fa-solid fa-house icon"></i
                 ></a>
               </div>
-              <!-- <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              <a class="navbar-brand" href="#">Kinh tế đầu tư</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
               <div
                 class="collapse navbar-collapse justify-content-between"
                 id="navbarSupportedContent"
               >
-                <ul class="navbar-nav" id="navbarItems">
+                <ul class="navbar-nav lg" id="navbarItems">
                   <!-- NavMenu -->
                 </ul>
-                <form class="d-flex">
+
+                <form class="form-inline">
                   <input
-                    class="form-control me-2"
+                    class="form-control mr-sm-2"
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
@@ -83,8 +86,8 @@
       <div class="container">
         <div class="col">
           <!-- top seciton -->
-          <section class="container row">
-            <div class="col w-50">
+          <section class="top-section container">
+            <div class="col">
               <div class="col-xl" id="top-post">
                 <!-- insert top post with image, title, summary -->
               </div>
@@ -93,14 +96,14 @@
                 <!-- insert subposts with 3x2 grid -->
               </div>
             </div>
-            <div class="row w-50" id="side-news">
+            <div id="side-news">
               <!-- side new items -->
             </div>
           </section>
           <hr />
           <!-- middle section -->
-          <section class="container row">
-            <div class="topics col w-75">
+          <section class="middle-section container">
+            <div class="topics col">
               <div class="container">
                 <div class="d-flex justify-content-between">
                   <h5 class="topic">Topic</h5>
@@ -110,7 +113,7 @@
                     <h6 class="sub-topic">Sub Topic2</h6>
                   </div>
                 </div>
-                <div class="d-flex gap-4">
+                <div class="d-flex gap-4 topic-news">
                   <div class="topic-main w-50">
                     <img src="./public/New.png" alt="news" />
                     <h6 class="title fw-bold">
@@ -176,7 +179,7 @@
                     <h6 class="sub-topic">Sub Topic2</h6>
                   </div>
                 </div>
-                <div class="d-flex gap-4">
+                <div class="d-flex gap-4 topic-news">
                   <div class="topic-main w-50">
                     <img src="./public/New.png" alt="news" />
                     <h6 class="title fw-bold">
@@ -242,7 +245,7 @@
                     <h6 class="sub-topic">Sub Topic2</h6>
                   </div>
                 </div>
-                <div class="d-flex gap-4">
+                <div class="d-flex gap-4 topic-news">
                   <div class="topic-main w-50">
                     <img src="./public/New.png" alt="news" />
                     <h6 class="title fw-bold">
@@ -297,7 +300,7 @@
                 </div>
               </div>
             </div>
-            <div class="sideads w-25" id="sideads">
+            <div class="sideads" id="sideads">
               <div class="ads-wrapper" id="ads-wrapper">
                 <!-- content -->
                 <div class="ad">

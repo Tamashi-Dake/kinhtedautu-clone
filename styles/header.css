@@ -22,6 +22,9 @@ header .navbar {
   font-weight: bold;
   font-size: 12px;
 }
+header .navbar .navbar-brand {
+  display: none;
+}
 header .navbar .navbar-nav {
   display: flex;
   justify-content: start;
@@ -42,6 +45,15 @@ header .navbar .nav-link .icon {
 }
 header .navbar .nav-title {
   color: white;
+}
+header .navbar form input {
+  display: none;
+  position: absolute;
+  width: 150px;
+  transform: translate(-100%, 0%);
+}
+header .navbar form:hover > input {
+  display: block;
 }
 
 .sticky-nav {
@@ -101,5 +113,44 @@ header .navbar .nav-title {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 1000px) {
+  .wraper {
+    display: none !important;
+  }
+  .navbar-brand {
+    display: block !important;
+    color: white;
+  }
+  .navbar-brand:focus {
+    color: wheat;
+  }
+  .navbar-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .navbar-nav .nav-link.show {
+    color: wheat;
+  }
+  .navbar-toggler {
+    margin: 10px;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    color: white;
+    background-color: white;
+  }
+  .lg {
+    display: none;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  form input {
+    flex-grow: 1;
+    display: inline-flex !important;
+    position: relative !important;
+    transform: translate(0%, 0%) !important;
   }
 }/*# sourceMappingURL=header.css.map */
