@@ -149,27 +149,6 @@ section {
   }
 }
 
-#toTop {
-  display: none;
-  position: fixed;
-  bottom: 30px;
-  right: 50px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgba(128, 128, 128, 0.367);
-  color: gray;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 0, 0, 0.497);
-}
-
-#toTop:hover {
-  background-color: #555;
-}
-
 .top-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
