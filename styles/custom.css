@@ -11971,6 +11971,15 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 168);
+}
+
+ul {
+  margin: 0;
+}
+
 @media (min-width: 1024px) {
   .dropdown:hover .dropdown-menu {
     display: block;

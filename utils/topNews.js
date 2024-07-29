@@ -1,13 +1,15 @@
 import { news } from "../data.js";
 
 const topPostElement = document.getElementById("top-post");
-const subPostElement = document.getElementById("sub-post");
+const subPostElement = document.getElementById("sub-posts");
 
 // Hiển thị bài viết chính
 const topPost = news[0];
 topPostElement.innerHTML = `
       <img src="${topPost.image}" alt="${topPost.title}">
-      <h2>${topPost.title}</h2>
+      <h2>
+      <a href="/news">
+      ${topPost.title}</a></h2>
       <p>${topPost.summary}</p>
   `;
 
@@ -17,7 +19,7 @@ news.slice(1).forEach((post) => {
   subPost.className = "sub-post";
   subPost.innerHTML = `
       <img src="${post.image}" alt="${post.title}">
-      <p class="py-4">${post.title}</p>
+      <a href="/news">${post.title}</a>
     `;
   subPostElement.appendChild(subPost);
 });

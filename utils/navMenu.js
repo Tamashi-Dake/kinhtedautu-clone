@@ -4,89 +4,89 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Tin tức",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Kinh tế",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
         { divider: true },
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Đầu tư",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
         { divider: true },
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
       ],
     },
     {
       title: "Văn hóa, Giáo dục",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
         { divider: true },
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
       ],
     },
     {
       title: "Sức Khỏe",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Xe",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Pháp luật",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Bạn trẻ",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Công nghệ",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
     {
       title: "Không gian đẹp",
       items: [
-        { text: "Tin Trong nước", href: "/news-list" },
+        { text: "Tin Trong nước", href: "news-list.html" },
         { divider: true },
-        { text: "Tin quốc tế", href: "/news-list" },
+        { text: "Tin quốc tế", href: "news-list.html" },
       ],
     },
   ];
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const a = document.createElement("a");
     a.className = "nav-link nav-title dropdown-toggle";
-    a.href = "/news-list";
+    a.href = "news-list.html";
     a.id = `${dropdown.title.replace(" ", "")}Dropdown`;
     a.role = "button";
     a.setAttribute("data-bs-toggle", "dropdown");

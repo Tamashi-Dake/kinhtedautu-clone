@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/custom.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/content.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <link
       rel="stylesheet"
@@ -49,19 +50,22 @@
               >
               <span class="navbar-toggler-icon"></span>
             </button> -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarSupportedContent"
+              >
                 <ul class="navbar-nav" id="navbarItems">
                   <!-- NavMenu -->
                 </ul>
                 <form class="d-flex">
-                  <!-- <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                /> -->
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="search nav-link" type="submit">
+                    <i class="fa fa-solid fa-search icon"></i>
                   </button>
                 </form>
               </div>
@@ -85,7 +89,7 @@
                 <!-- insert top post with image, title, summary -->
               </div>
               <hr />
-              <div class="col-xl" id="sub-post">
+              <div class="col-xl" id="sub-posts">
                 <!-- insert subposts with 3x2 grid -->
               </div>
             </div>
@@ -97,17 +101,17 @@
           <!-- middle section -->
           <section class="container row">
             <div class="topics col w-75">
-              <div class="d-flex justify-content-between">
-                <h5 class="topic">Topic</h5>
-                <div class="d-flex sub-topics justify-content-end gap-1">
-                  <h6 class="sub-topic">Sub Topic1</h6>
-                  |
-                  <h6 class="sub-topic">Sub Topic2</h6>
+              <div class="container">
+                <div class="d-flex justify-content-between">
+                  <h5 class="topic">Topic</h5>
+                  <div class="d-flex sub-topics justify-content-end gap-1">
+                    <h6 class="sub-topic">Sub Topic1</h6>
+                    <span class="sub-topic-devider">|</span>
+                    <h6 class="sub-topic">Sub Topic2</h6>
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex gap-4">
-                <div class="topic-main col w-50">
-                  <div class="topic-main d-flex flex-column gap-1">
+                <div class="d-flex gap-4">
+                  <div class="topic-main w-50">
                     <img src="./public/New.png" alt="news" />
                     <h6 class="title fw-bold">
                       Bất động sản công nghiệp tiếp tục đà tăng trưởng Bất động
@@ -128,35 +132,167 @@
                       </ul>
                     </div>
                   </div>
+                  <div class="topic-subs col w-50">
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="topic-subs col w-50">
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+              </div>
+              <hr />
+
+              <div class="container">
+                <div class="d-flex justify-content-between">
+                  <h5 class="topic">Topic</h5>
+                  <div class="d-flex sub-topics justify-content-end gap-1">
+                    <h6 class="sub-topic">Sub Topic1</h6>
+                    <span class="sub-topic-devider">|</span>
+
+                    <h6 class="sub-topic">Sub Topic2</h6>
                   </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+                </div>
+                <div class="d-flex gap-4">
+                  <div class="topic-main w-50">
+                    <img src="./public/New.png" alt="news" />
+                    <h6 class="title fw-bold">
+                      Bất động sản công nghiệp tiếp tục đà tăng trưởng Bất động
+                      sản công nghiệp tiếp tục đà tăng trưởng
+                    </h6>
+                    <p class="summary">
+                      Bất động sản công nghiệp tiếp tục đà tăng trưởng Bất động
+                      sản công nghiệp tiếp tục đà tăng trưởng Bất động sản công
+                      nghiệp tiếp tục đà tăng trưởng
+                    </p>
+                    <div class="other-links">
+                      <ul class="d-flex flex-column justify-content-center">
+                        <li>
+                          <a href="#">Link1</a>
+                        </li>
+                        <hr class="devider" />
+                        <li><a href="#">Link2</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+                  <div class="topic-subs col w-50">
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
                   </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+                </div>
+              </div>
+              <hr />
+
+              <div class="container">
+                <div class="d-flex justify-content-between">
+                  <h5 class="topic">Topic</h5>
+                  <div class="d-flex sub-topics justify-content-end gap-1">
+                    <h6 class="sub-topic">Sub Topic1</h6>
+                    <span class="sub-topic-devider">|</span>
+
+                    <h6 class="sub-topic">Sub Topic2</h6>
                   </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+                </div>
+                <div class="d-flex gap-4">
+                  <div class="topic-main w-50">
+                    <img src="./public/New.png" alt="news" />
+                    <h6 class="title fw-bold">
+                      Bất động sản công nghiệp tiếp tục đà tăng trưởng Bất động
+                      sản công nghiệp tiếp tục đà tăng trưởng
+                    </h6>
+                    <p class="summary">
+                      Bất động sản công nghiệp tiếp tục đà tăng trưởng Bất động
+                      sản công nghiệp tiếp tục đà tăng trưởng Bất động sản công
+                      nghiệp tiếp tục đà tăng trưởng
+                    </p>
+                    <div class="other-links">
+                      <ul class="d-flex flex-column justify-content-center">
+                        <li>
+                          <a href="#">Link1</a>
+                        </li>
+                        <hr class="devider" />
+                        <li><a href="#">Link2</a></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
-                  </div>
-                  <div class="topic-sub">
-                    <img src="./public/New.png" alt="sub" />
-                    <p>Title sub topic</p>
+                  <div class="topic-subs col w-50">
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
+                    <div class="topic-sub">
+                      <img src="./public/New.png" alt="sub" />
+                      <p>Title sub topic</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -164,21 +300,53 @@
             <div class="sideads w-25" id="sideads">
               <div class="ads-wrapper" id="ads-wrapper">
                 <!-- content -->
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
+                <div class="ad">
+                  <img src="./public/asideAd.png" alt="ad" class="w-100" />
+                </div>
+                <div class="ad">
+                  <img src="./public/asideAd.png" alt="ad" class="w-100" />
+                </div>
+                <div class="ad">
+                  <img src="./public/asideAd.png" alt="ad" class="w-100" />
+                </div>
+                <div class="ad">
+                  <img src="./public/asideAd.png" alt="ad" class="w-100" />
+                </div>
+                <div class="ad">
+                  <img src="./public/asideAd.png" alt="ad" class="w-100" />
+                </div>
               </div>
             </div>
           </section>
           <section></section>
         </div>
       </div>
+      <button onclick="topFunction()" id="toTop" title="Go to top">
+        <i class="fa fa-solid fa-arrow-up icon p-1"></i>
+      </button>
     </main>
     <footer>
       <!-- place footer here -->
+      <footer>
+        <div class="company">
+          <img src="./public/logo.png" alt="logo" />
+          <p class="company-description">
+            Tạp chí Kinh tế đầu tư - Trang tin điện tử tổng hợp Kinh tế, Kinh
+            doanh, Tiền tệ, tài chính, văn hóa xã hội
+          </p>
+        </div>
+        <div
+          class="copyright d-flex justify-content-between align-items-center"
+        >
+          <span>© Copyright by Kinh tế đầu tư. All rights reserved.</span>
+          <img
+            src="https://kinhtedautu.com/template/frontend/images/dmca_protected_sml_120m.png"
+            alt="dmca"
+          />
+        </div>
+      </footer>
     </footer>
+
     <!-- <script src="./utils/bootstrapScript.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -195,5 +363,29 @@
     <script src="./utils/textBanner.js" type="module"></script>
     <script src="./utils/topNews.js" type="module"></script>
     <script src="./utils/sideNew.js" type="module"></script>
+    <script>
+      let toTopBtn = document.getElementById("toTop");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          toTopBtn.style.display = "block";
+        } else {
+          toTopBtn.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>

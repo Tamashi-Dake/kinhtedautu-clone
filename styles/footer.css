@@ -1,0 +1,24 @@
+footer .company {
+  display: flex;
+  padding: 30px 150px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: hsl(345, 6%, 13%);
+  opacity: 0.9;
+}
+footer .company img {
+  padding: 50px;
+  border-right: 1px solid rgba(128, 128, 128, 0.181);
+}
+footer .company p {
+  padding: 0 50px;
+  font-style: italic;
+  font-size: smaller;
+  display: inline-block;
+  color: #c5c5c5;
+}
+footer .copyright {
+  margin: 20px 150px;
+  font-size: 0.8rem;
+  color: #666;
+}/*# sourceMappingURL=footer.css.map */

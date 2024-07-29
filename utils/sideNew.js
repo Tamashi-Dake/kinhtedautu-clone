@@ -8,22 +8,32 @@ for (let i = 0; i < 6; i++) {
   const sidenew = document.createElement("div");
   sidenew.className = "side-new";
   let content = `
-        <h3 class="topic">${topic}</h3>
+        <h3 class="topic">
+        <a href="/news-list" class="text-white">${topic}</a></h3>
         <img src="${news[i].image}" alt="${news[i].title}">
-        <p class="pt-1 first-in-topic" >${news[i].title}</p>
+        <p class="pt-1 first-in-topic" >
+        <a href="/news">
+        ${news[i].title}</a>
+        </p>
         <hr />
-        <p class="">${news[i].title}</p>
+        <p class=""><a href="/news">
+        ${news[i].title}</a></p>
         <hr />
-        <p class="">${news[i].title}</p>
+        <p class=""><a href="/news">
+        ${news[i].title}</a></p>
     `;
   if (i > 1) {
     content = `
-        <h3 class="topic">${topic}</h3>
-        <p class="pt-1 first-in-topic">${news[i].title}</p>
+        <h3 class="topic">        <a href="/news-list" class="text-white">${topic}</a></h3>
+</h3>
+        <p class="pt-1 first-in-topic"><a href="/news">
+        ${news[i].title}</a></p>
         <hr />
-        <p class="">${news[i].title}</p>
+        <p class=""><a href="/news">
+        ${news[i].title}</a></p>
         <hr />
-        <p class="">${news[i].title}</p>
+        <p class=""><a href="/news">
+        ${news[i].title}</a></p>
     `;
   }
   sidenew.innerHTML = content;

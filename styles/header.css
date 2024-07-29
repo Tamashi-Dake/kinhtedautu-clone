@@ -29,7 +29,7 @@ header .navbar .navbar-nav {
 }
 header .navbar .nav-item {
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 5px;
   height: 100%;
 }
 header .navbar .nav-item:hover {
@@ -64,6 +64,7 @@ header .navbar .nav-title {
   white-space: nowrap;
   box-sizing: border-box;
   position: relative;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 .marquee .cta {
   font-weight: 600;
@@ -71,7 +72,7 @@ header .navbar .nav-title {
   font-size: 18px;
   position: absolute;
   z-index: 1;
-  padding: 0 10px;
+  padding: 10px;
   background: white;
   text-decoration: underline;
 }
@@ -79,6 +80,7 @@ header .navbar .nav-title {
 .marquee-content {
   display: flex;
   animation: marquee 40s linear infinite;
+  padding: 10px;
 }
 .marquee-content:hover {
   animation-play-state: paused; /* Tạm dừng animation khi hover */

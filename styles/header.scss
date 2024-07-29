@@ -31,7 +31,7 @@ header {
 
     .nav-item {
       text-decoration: none;
-      padding: 10px;
+      padding: 10px 5px;
       height: 100%;
 
       &:hover {
@@ -73,14 +73,14 @@ header {
   white-space: nowrap;
   box-sizing: border-box;
   position: relative;
-
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   .cta {
     font-weight: 600;
     color: #bd2024;
     font-size: 18px;
     position: absolute;
     z-index: 1;
-    padding: 0 10px;
+    padding: 10px;
     background: white;
     text-decoration: underline;
   }
@@ -89,7 +89,7 @@ header {
 .marquee-content {
   display: flex;
   animation: marquee 40s linear infinite;
-
+  padding: 10px;
   &:hover {
     animation-play-state: paused; /* Tạm dừng animation khi hover */
   }
