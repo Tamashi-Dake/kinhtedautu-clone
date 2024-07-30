@@ -1,3 +1,1 @@
-# Bootstrap 5 + SCSS
-
-## Todo
+Try Next + Bootstrap + SCSS
