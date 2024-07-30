@@ -8,7 +8,7 @@ const topPost = news[0];
 topPostElement.innerHTML = `
       <img src="${topPost.image}" alt="${topPost.title}">
       <h2>
-      <a href="/news">
+      <a href="news.html">
       ${topPost.title}</a></h2>
       <p>${topPost.summary}</p>
   `;
@@ -19,7 +19,7 @@ news.slice(1).forEach((post) => {
   subPost.className = "sub-post";
   subPost.innerHTML = `
       <img src="${post.image}" alt="${post.title}">
-      <a href="/news">${post.title}</a>
+      <a href="news.html">${post.title}</a>
     `;
   subPostElement.appendChild(subPost);
 });
