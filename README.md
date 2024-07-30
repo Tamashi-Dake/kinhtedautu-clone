@@ -1,1 +1,1 @@
-Try Next + Bootstrap + SCSS
+start with live server
